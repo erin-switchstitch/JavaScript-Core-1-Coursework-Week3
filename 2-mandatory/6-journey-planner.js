@@ -108,14 +108,15 @@ var accessibleArr =[];
 function isAccessibleByTransportMode(arr) {
   CL(arr);
   // don't understand whats happening here. It seems like this function is not seeing the "tube" (i.e. last element)
+  // This only has
 
   var newArr = arr.forEach(element => {
    //CL(element);
   });
 }
 
-//CL(isAccessibleByTransportMode(["tube", "bus"], "tube"));
-//CL(["tube", "bus"], "tube");
+CL(isAccessibleByTransportMode(["tube", "bus"], "tube")); // I don't know what datatype this is 
+CL(typeof(["tube", "bus"], "tube"));
 
 
 
